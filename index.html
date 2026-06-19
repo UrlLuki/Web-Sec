@@ -4,23 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SecureLayer | Web Security Scans</title>
+  <script defer src="script.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="hero">
   <nav class="navbar">
-    <div class="logo">SecureLayer</div>
+  <div class="logo">SecureLayer</div>
 
-    <div class="nav-links">
-      <a href="#leistungen">Leistungen</a>
-      <a href="about.html">Über uns</a>
-      <a href="#kontakt" class="nav-cta">Kontakt</a>
-    </div>
-  </nav>
+  <button class="hamburger" aria-label="Menü öffnen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-links">
+    <a href="#leistungen">Leistungen</a>
+    <a href="about.html">Über uns</a>
+    <a href="#kontakt" class="nav-cta">Kontakt</a>
+  </div>
+</nav>
 
   <section class="hero-content">
-    <div class="badge">Web Security · Österreich · Klarer Bericht</div>
+    <div class="badge">Web Security · Deutssprachiger Raum</div>
 
     <h1>Wir prüfen Ihre Website auf Sicherheitslücken.</h1>
 
@@ -32,7 +39,7 @@
 
     <div class="hero-buttons">
       <a href="#kontakt" class="btn primary">Scan anfragen</a>
-      <a href="about.html" class="btn secondary">Wer wir sind</a>
+      <a href="about.html" class="btn secondary">Über uns</a>
     </div>
   </section>
 </header>
@@ -68,7 +75,7 @@
         <div class="icon">📄</div>
         <h3>Security Report</h3>
         <p>
-          Ein klarer Bericht mit Risiko-Einstufung, Screenshots,
+          Ein klarer Bericht mit Risiko-Einstufung,
           technischen Details und konkreten Empfehlungen zur Behebung.
         </p>
       </article>
@@ -78,7 +85,7 @@
   <section class="section dark">
     <div class="section-title">
       <span>Ablauf</span>
-      <h2>So läuft ein Security Check ab</h2>
+      <h2>So läuft Ihr Security Check ab</h2>
     <!--immernoch umschreiben--> 
     </div>
 
@@ -90,7 +97,7 @@
 
       <div>
         <strong>02</strong>
-        <p>Ihre Website wird automatisiert auf Sicherheitsrisiken geprüft.</p>
+        <p>Ihre Website wird auf mögliche Sicherheitsrisiken geprüft.</p>
       </div>
 
       <div>
@@ -110,7 +117,7 @@
     <div class="split">
       <div>
         <span class="small-label">Für wen?</span>
-        <h2>Ideal für aufstrebenden Unternehmen, Vereine & Selbstständige</h2>
+        <h2>Ideal für aufstrebende Unternehmen, Vereine & Selbstständige</h2>
       </div>
 
       <p>
@@ -123,12 +130,11 @@
 
   <section id="kontakt" class="contact">
     <h2>Bereit für Ihren ersten Security Check?</h2>
-    <p>Senden Sie uns Ihre Website und wir melden uns mit einer ersten Einschätzung.</p>
 
     <form>
       <input type="text" placeholder="Name">
       <input type="email" placeholder="E-Mail">
-      <input type="text" placeholder="Website">
+      <input type="text" placeholder="Website">     <!--Logik zum Formular senden implementieren. (GetForm)-->
       <textarea placeholder="Nachricht"></textarea>
       <button type="submit">Anfrage senden</button>
     </form>
