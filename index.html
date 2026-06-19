@@ -11,23 +11,23 @@
 
 <header class="hero">
   <nav class="navbar">
-  <div class="logo">SecureLayer</div>
+    <a href="index.html" class="logo">SecureLayer</a>
 
-  <button class="hamburger" aria-label="Menü öffnen">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
+    <button class="hamburger" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-  <div class="nav-links">
-    <a href="#leistungen">Leistungen</a>
-    <a href="about.html">Über uns</a>
-    <a href="#kontakt" class="nav-cta">Kontakt</a>
-  </div>
-</nav>
+    <div class="nav-links">
+      <a href="#leistungen">Leistungen</a>
+      <a href="about.html">Über uns</a>
+      <a href="#kontakt" class="nav-cta">Kontakt</a>
+    </div>
+  </nav>
 
   <section class="hero-content">
-    <div class="badge">Web Security · Deutssprachiger Raum</div>
+    <div class="badge">Web Security · Deutschsprachiger Raum</div>
 
     <h1>Wir prüfen Ihre Website auf Sicherheitslücken.</h1>
 
@@ -86,7 +86,6 @@
     <div class="section-title">
       <span>Ablauf</span>
       <h2>So läuft Ihr Security Check ab</h2>
-    <!--immernoch umschreiben--> 
     </div>
 
     <div class="timeline">
@@ -111,7 +110,6 @@
       </div>
     </div>
   </section>
-  <!--bis zu diesem Absatz--> 
 
   <section class="section">
     <div class="split">
@@ -131,12 +129,21 @@
   <section id="kontakt" class="contact">
     <h2>Bereit für Ihren ersten Security Check?</h2>
 
-    <form>
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="E-Mail">
-      <input type="text" placeholder="Website">     <!--Logik zum Formular senden implementieren. (GetForm)-->
-      <textarea placeholder="Nachricht"></textarea>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="a3ebf097-d798-4475-a22f-1816e7b226af">
+      <input type="hidden" name="subject" value="Neue Anfrage über SecureLayer">
+
+      <input type="text" name="name" placeholder="Name" required>
+
+      <input type="email" name="email" placeholder="E-Mail" required>
+
+      <input type="text" name="website" placeholder="Website">
+
+      <textarea name="message" placeholder="Nachricht" required></textarea>
+
       <button type="submit">Anfrage senden</button>
+
     </form>
   </section>
 
