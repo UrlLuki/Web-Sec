@@ -20,6 +20,7 @@
     </button>
 
     <div class="nav-links">
+      <a href="index.html">Startseite</a>
       <a href="#leistungen">Leistungen</a>
       <a href="about.html">Über uns</a>
       <a href="#kontakt" class="nav-cta">Kontakt</a>
@@ -135,21 +136,26 @@
       <input type="hidden" name="subject" value="Neue Anfrage über SecureLayer">
       <input type="hidden" name="from_name" value="SecureLayer Kontaktformular">
 
-      <!--Spam-Schutz-->
+      <!-- Spam-Schutz -->
       <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-      <!-- Weiterleitung nach erfolgreichem Absenden -->
-      <input type="hidden" name="redirect" value="https://web3forms.com/success">
+      <!-- Später eigene danke.html verwenden -->
+      <input type="hidden" name="redirect" value="danke.html">
 
-      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="name" placeholder="Name" autocomplete="name" required>
 
-      <input type="email" name="email" placeholder="E-Mail" required>
+      <input type="email" name="email" placeholder="E-Mail" autocomplete="email" required>
 
-      <input type="text" name="website" placeholder="Website">
+      <input type="url" name="website" placeholder="Website" inputmode="url" autocomplete="url">
 
       <textarea name="message" placeholder="Nachricht" required></textarea>
 
+      <p class="form-note">
+        Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben zur Bearbeitung Ihrer Anfrage verwenden.
+      </p>
+
       <button type="submit">Anfrage senden</button>
+      <!--eine danke.html fehlt noch-->
 
     </form>
   </section>
