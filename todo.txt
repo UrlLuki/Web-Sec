@@ -1,0 +1,11 @@
+* Automatic email auf Resend (anbieter)
+* Firmen-Email kann zb auf zoho gemacht werden. zB (office@securelayer.at)
+* Trustpilot Domain benötigt
+* Cloudflare Domain benötigt
+
+Für alle Punkte oben eine Domain nötig.
+
+Namen:
+  Varent (noch keine website mit dem Namen vorhanden wenn auf google gesucht) (prank site vorhanden mit .com)
+  Tervera 
+  Tutela
